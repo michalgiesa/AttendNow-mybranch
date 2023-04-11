@@ -1,0 +1,77 @@
+html, main{
+    background-color: #f0a94f;
+    color: #093644;
+    padding: 15px;
+}
+
+/* Content in body related */
+#phoneImage{
+    object-fit: contain;
+}
+
+.bottom-line{
+    border-bottom: 1px solid #a67358;
+}
+
+#show1 img, #show2 img, #show3 img{
+    display: inline-block;
+}
+
+#show1 p, #show2 p, #show3 p{
+    width: 100%;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.mr-md-15 {
+    margin-right: 0.375rem !important;
+}
+
+.col-md-3{
+    border: 2px solid #093644;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.col-md-3:hover{
+    border-color: #4b8bad !important;
+}
+/* */
+
+/* Modal related */
+.modal-backdrop
+{
+    opacity:0.8 !important;    
+}
+
+.modal-header{
+    border-bottom: 1px solid #a67358 !important;
+}
+
+.modal-footer{
+    border-top: 1px solid #a67358 !important;
+}
+
+.modal-content{
+    background-color: #f0a94f !important;
+    color: #093644 !important;
+    border-radius: 100px;
+}
+
+.close{
+    text-shadow: none !important;
+    color: #093644 !important;
+}
+
+.btn-primary{
+    color: #ff981a !important;
+    background-color: #093644 !important;
+    border-color: #093644 !important;
+}
+
+.btn-secondary{
+    color: #093644 !important;
+    background-color: #ff981a !important;
+    border-color: #093644 !important;
+}
+/* */

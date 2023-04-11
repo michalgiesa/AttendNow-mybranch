@@ -1,0 +1,103 @@
+body {
+    overflow: hidden;
+}
+
+.container{
+    color: #ff981a;
+    padding: 15px;
+    border-radius: 1em;
+}
+
+/* Content in body related */
+#phoneImage{
+    object-fit: contain;
+    margin-right: 1rem;
+    max-height: 100%;
+}
+
+.bottom-line{
+    border-bottom: 1px solid #a67358;
+}
+
+#show1 img, #show2 img, #show3 img{
+    display: inline-block;
+}
+
+#show1 p, #show2 p, #show3 p{
+    width: 100%;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.col-md-3{
+    margin-bottom: 15px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.base-image, .overlay-image {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-wrapper:hover .base-image {
+    opacity: 0;
+}
+
+.image-wrapper:hover .overlay-image {
+    opacity: 1;
+}
+
+
+/* */
+
+/* Modal related */
+#formModal {
+    margin-top: -10em !important;
+}
+
+#formModal .modal-backdrop
+{
+    opacity:0.5 !important;    
+}
+
+#formModal .modal-header{
+    border-bottom: 1px solid #a67358 !important;
+}
+
+#formModal .modal-footer{
+    border-top: 1px solid #a67358 !important;
+}
+
+#formModal .modal-content{
+    background-color: #0e1518 !important;
+    color: #ff981a !important;
+}
+
+#formModal .btn{
+    border: none;
+}
+
+#formModal .btn-primary{
+    color: #093644 !important;
+    background-color: #ff981a !important;
+}
+
+#formModal .btn-secondary{
+    color: #ff981a !important;
+    background-color: #093644 !important;
+}
+
+/* */

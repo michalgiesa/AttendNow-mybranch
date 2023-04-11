@@ -1,0 +1,97 @@
+.container {
+    color: #ff981a;
+}
+
+.container .card {
+    background: none !important;
+}
+
+.container .form-control{
+    opacity: 30%;
+    background-color: #0e1518 !important;
+    border-color: silver !important;
+}
+
+.container .form-control::placeholder{
+    color: #333;
+    border-color: silver;
+}
+
+.container .form-control:hover::placeholder {
+  color: #ff981a !important;
+  transition: all 0.1s ease-in-out;
+}
+
+.container .form-control:focus{
+    background-color: #5d3f58 !important;
+    color: #ff981a !important;
+}
+
+.container .form-control:hover{
+    opacity: 100%;
+    background-color: #5d3f58 !important; /* change this to the desired color */
+    border-color: #5d3f58 !important; /* remove the border if desired */
+    border-radius: 1; /* remove the border radius if desired */
+    transition: background-color 0.1s ease-in-out;  
+}
+
+/* */
+
+.container .form-select{
+    opacity: 30%;
+    background-color: #0e1518 !important;
+    border-color: silver !important;
+}
+
+
+.container .form-select:hover{
+    opacity: 100%;
+    background-color: #5d3f58 !important; /* change this to the desired color */
+    border-color: #5d3f58 !important; /* remove the border if desired */
+    color: #ff981a !important;
+    border-radius: 1; /* remove the border radius if desired */
+    transition: background-color 0.1s ease-in-out;  
+}
+
+.container .btn{
+    background-color: transparent !important;
+    border-color: #4a4a4a !important;
+    color: #333 !important;
+    margin-right: 5vw;
+}
+
+.container .btn:hover{
+    background-color: #5d3f58 !important;
+    border-color: #5d3f58 !important;
+    color: #ff981a !important;
+    transition: all 0.1s ease-in-out;
+}
+
+.container .filters {
+    border:1px solid #ff981a !important;
+}
+
+.container .card{
+    border:1px solid #ff981a !important;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .form-control {
+        opacity: 100%;
+        color:#ff981a;
+        background-color: #5d3f58; /* change this to the desired color */
+        border: none; /* remove the border if desired */
+        border-radius: 1;
+    }
+
+    .form-control::placeholder{
+        color: #ff981a;
+    }
+
+    .btn {
+        background-color: #5d3f58;
+        border-color: #5d3f58;
+        color: #ff981a;
+    }
+}

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0e1518;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
+  }
+  /* Loading wheel styling */
+  .loader .spinner-border {
+    width: 4rem;
+    height: 4rem;
+    color: #ff981a;
+  }
+  /* Hide website content by default */
+  .content .mp_icons{
+    display: none;
+  }
+  /* Fade out animation for the loader */
+  .loader.fade-out {
+    opacity: 0;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Goldman', cursive;
+  }
+  
+  .background {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e1518;
+    z-index: -1;
+  }
+  
+  .square {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff981a;
+    margin: 50px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    opacity: 40%;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(200px, 200px);
+    }
+  }
+  
+  .square2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #a67358;
+    margin: 50px;
+    animation-name: move2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    opacity: 40%;
+  }
+  
+  @keyframes move2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(150px, 150px);
+    }
+  }
+  
+  .square3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #5d3f58;
+    margin: 50px;
+    animation-name: move3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    opacity: 40%;
+  }
+  
+  @keyframes move3 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(100px, 100px);
+    }
+  }
+
+/* abbv: 
+    - mp = main page
+*/
+
+.mp_content{
+  margin-left: 5vw;
+}
+
+.mp_logo {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: -10vh;
+}
+
+.mp_nav {
+    margin-top: -0;
+    margin-bottom: 10%;
+}
+
+.mp_nav_ul {
+    padding: 0;
+    margin-bottom: 5vh;
+}
+
+.mp_nav_li {
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.mp_nav_li_a {
+    color: #333;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mp_nav_li_a:hover {
+    color: #ff981a;
+    transition: color 0.1s ease-in-out;
+}
+
+.form-control{
+    opacity: 30%;
+    background-color: #0e1518;
+    border-color: silver;
+    margin-left: 5vw;
+}
+
+.form-control::placeholder{
+    color: #333;
+    border-color: silver;
+}
+
+.form-control:hover::placeholder {
+  color: #ff981a;
+  transition: all 0.1s ease-in-out;
+}
+
+.form-control:focus{
+    background-color: #5d3f58;
+    color: #ff981a;
+  }
+
+.form-control:hover{
+    opacity: 100%;
+    background-color: #5d3f58; /* change this to the desired color */
+    border-color: #5d3f58; /* remove the border if desired */
+    border-radius: 1; /* remove the border radius if desired */
+    transition: background-color 0.1s ease-in-out;  
+}
+
+.btn{
+    border-color: #4a4a4a;
+    color: #333;
+    margin-right: 5vw;
+}
+
+.btn:hover{
+    background-color: #5d3f58;
+    border-color: #5d3f58;
+    color: #ff981a;
+    transition: all 0.1s ease-in-out;
+}
+
+.mp_icons{
+    margin-bottom: auto;
+    padding-bottom: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.mp_icons_hover{
+  opacity: 0.3;
+}
+
+.mp_icons_hover:hover{
+  opacity: 1;
+  transition: 0.1s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+    .mp_content {
+        padding-bottom: 10vh;
+        margin-left: 0;
+    }
+
+    .mp_logo {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 0vh;
+    }
+
+    .mp_nav_li_a {
+        color:#ff981a;
+        margin-bottom: 5vh;
+        margin-top: -2vh;
+    }
+
+    .form-control {
+        opacity: 100%;
+        color:#ff981a;
+        background-color: #5d3f58; /* change this to the desired color */
+        border: none; /* remove the border if desired */
+        border-radius: 1;
+    }
+
+    .form-control::placeholder{
+        color: #ff981a;
+    }
+
+    .btn {
+        background-color: #5d3f58;
+        border-color: #5d3f58;
+        color: #ff981a;
+    }
+}
